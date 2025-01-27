@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int arr[5][5],j=0,i=0,s,p,q;
+	cout<<"Enter the arrray elements:"<<endl;
+	
+	for(i=0;i<5;i++)
+	{
+		for(j=0;j<5;j++)
+			arr[i][j]=5*i+j+1;
+	}
+	for(i=0;i<5;i++)
+	{
+		for(j=0;j<5;j++)
+			cout<<arr[i][j]<<"\t";
+		cout<<"\n\n";
+	}
+	cout<<"Enter the search position for smallest element"<<endl;
+	cin>>s;
+	p=s/5;
+	q=s%5;
+	cout<<arr[p][q-1];
+	
+}
